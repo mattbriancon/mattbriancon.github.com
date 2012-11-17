@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <style type="text/css">
-        * { font-family: Helvetica; color: #DDD; }
-        a { font-size:3em; text-decoration: none; }
-        a:link, a:visited, a:active, a:focus { border-bottom: 1px dotted #DDD; }
-        a:hover { color: #FFF; border-bottom: 1px solid #FFF; }
-        html {
-            background: url(WaterLily_MattBriancon.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+        * { font-family: Inconsolata, Courier, monospace; color: #111; }
+
+        html { min-height: 100%; }
+
+        body {
+            width: 100%;
+            min-width: 400px;
+            min-height: 100%;
+            margin: 0;
         }
-        #container {
-            z-index: 2;
-            position: relative;
+
+        .left, .right {
+            width: 50%;
+            padding: 300px 40px 40px 40px;
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
         }
-        #background {
+
+        .left {
+            text-align: right;
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
         }
-        #license {
-            font-size: 14px;
-            color: #AAA;
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
+
+        h1 {
+            margin-top: 0;
         }
-        #license a {
-            font-size: 14px;
-            color: #AAA;
-            text-decoration: none;
+
+        .right {
+            position: absolute;
+            left: 50%;
+            min-height: 100%;
+            border-left: 1px solid #111;
         }
-        #license a:link, #license a:visited, #license a:active, #license a:focus { border-bottom: 1px dotted #AAA; }
-        #license a:hover { color: #FFF; border-bottom: 1px solid #FFF; }
+
+        .right ul {
+            padding: 0;
+            margin: 0;
+            list-style-position: inside;
+        }
+
+        li { margin: 1em 0; }
+        li:first-of-type { margin-top: 0; }
+        li:last-of-type { margin-bottom: 0; }
         </style>
 
-        <title>mattbriancon</title>
+        <title>matt briancon</title>
+    </head>
+
+    <body>
+        <div class="left">
+            <h1 class="name">matt<br />briançon</h1>
+            <div class="links">
+                first (dot) last<br />(at) gmail (dot) com<br /><br />
+                <a href="http://github.com/mattbriancon">gh</a>
+                <a href="http://twitter.com/mattbriancon">t</a>
+                <a href="http://facebook.com/mattbriancon">f</a>
+                <a href="http://news.ycombinator.com/user?id=brimpa">hn</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <h1 class="name"><br /><br /></h1>
+            <ul>
+                <li><a href="https://www.ordernowapp.com">ordernow</a></li>
+                <li><a href="http://hype.brimpa.com">hype!</a></li>
+                <li><a href="http://bgov.com">bgov</a></li>
+                <li><a href="http://qubelab.org">qubelab</a></li>
+                <li><a href="http://cwru.edu">cwru</a></li>
+            </ul>
+        </div>
 
         <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -54,25 +89,6 @@
         })();
         </script>
 
-    </head>
-
-    <body>
-        <div id="container" style='text-align:center;'>
-            <h1 style='font-size:10em;padding:0;margin:0;'>mattbriançon</h1>
-            <br />
-            <a href="http://twitter.com/mattbriancon">@mattbriancon</a>
-            <br />
-            <br />
-            <br />
-            <div style="font-size: 0.5em;">
-                <a href="http://hype.brimpa.com">the hype machine. on android!</a> <span style="font-size:4em;">|</span> <a href="http://brimpa.com">brimpa</a> <span style="font-size:4em;">|</span> <a href="http://feb10.com">feb10</a>
-            </div>
-        </div>
-
-        <!--<img id="background" src="WaterLily_MattBriancon.jpg" alt="Water Lily" />-->
-        <div id="license">
-            Image is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
-        </div>
     </body>
 </html>
 
