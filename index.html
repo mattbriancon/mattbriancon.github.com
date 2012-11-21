@@ -17,7 +17,6 @@
         }
 
         .left, .right {
-            width: 50%;
             padding: 300px 40px 40px 40px;
             -webkit-box-sizing: border-box;
                -moz-box-sizing: border-box;
@@ -37,7 +36,9 @@
 
         .right {
             position: absolute;
-            left: 50%;
+            left: 240px;
+            max-width: 720px;
+            min-width: 400px;
             min-height: 100%;
             border-left: 1px solid #111;
         }
@@ -45,26 +46,28 @@
         .right ul {
             padding: 0;
             margin: 0;
-            list-style-position: inside;
+            list-style-position: outside;
         }
 
         li { margin: 1em 0; }
         li:first-of-type { margin-top: 0; }
         li:last-of-type { margin-bottom: 0; }
+        li p { text-align: justify; }
         </style>
 
-        <title>matt briancon</title>
+        <title>matt brian&ccedil;on</title>
     </head>
 
     <body>
         <div class="left">
-            <h1 class="name">matt<br />briançon</h1>
+            <h1 class="name">matt<br />brian&ccedil;on</h1>
             <div class="links">
                 first (dot) last<br />(at) gmail (dot) com<br /><br />
                 <a href="http://github.com/mattbriancon">gh</a>
                 <a href="http://twitter.com/mattbriancon">t</a>
                 <a href="http://facebook.com/mattbriancon">f</a>
                 <a href="http://news.ycombinator.com/user?id=brimpa">hn</a>
+                <a href="http://www.linkedin.com/in/mattbriancon">li</a>
             </div>
         </div>
 
@@ -72,6 +75,7 @@
             <h1 class="name"><br /><br /></h1>
             <ul>
                 <li><a href="https://www.ordernowapp.com">ordernow</a></li>
+                <li><a href="http://curranhatleberg.com">curran hatleberg</a></li>
                 <li><a href="http://hype.brimpa.com">hype!</a></li>
                 <li><a href="http://bgov.com">bgov</a></li>
                 <li><a href="http://qubelab.org">qubelab</a></li>
