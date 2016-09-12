@@ -1,95 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <style type="text/css">
-        * { font-family: monospace; color: #111; }
-        html { min-height: 100%; }
-        body {
-            font-size: 16px;
-            margin: 0;
-            min-width: 400px;
-            min-height: 100%;
-            width: 100%;
-        }
-        .left, .right {
-            padding: 300px 40px 40px 40px;
-            box-sizing: border-box;
-        }
-
-        .left {
-            text-align: right;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        h1 {
-            margin-top: 0;
-        }
-
-        .right {
-            position: absolute;
-            left: 272px;
-            max-width: 720px;
-            min-width: 400px;
-            min-height: 100%;
-            border-left: 1px solid #111;
-        }
-
-        .right ul {
-            padding: 0;
-            margin: 0;
-            list-style-position: outside;
-        }
-
-        li { margin: 1em 0; }
-        li:first-of-type { margin-top: 0; }
-        li:last-of-type { margin-bottom: 0; }
-        li p { text-align: justify; }
-        </style>
-
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>matt brian&ccedil;on</title>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/basscss-type-scale@1.0.5/css/type-scale.css" rel="stylesheet">
+        <link href="https://unpkg.com/basscss-typography@3.0.3/css/typography.css" rel="stylesheet">
+
+        <style>
+            * { font-family: monospace; color: #111; }
+
+            .inside-list { list-style-position: inside; }
+        </style>
     </head>
 
     <body>
-        <div class="left">
-            <h1 class="name">matt<br />brian&ccedil;on</h1>
-            <div class="links">
-                first (dot) last<br />(at) gmail (dot) com<br /><br />
-                <a href="http://github.com/mattbriancon">gh</a>
-                <a href="http://twitter.com/mattbriancon">t</a>
-                <a href="http://facebook.com/mattbriancon">f</a>
-                <a href="http://instagram.com/mattbriancon">i</a>
-                <a href="http://news.ycombinator.com/user?id=brimpa">hn</a>
-                <a href="http://www.linkedin.com/in/mattbriancon">li</a>
-                <a href="http://stackoverflow.com/users/305736/matt-briancon">so</a>
+        <div class="        sm-hide md-hide lg-hide">--</div>
+        <div class="xs-hide         md-hide lg-hide">sm</div>
+        <div class="xs-hide sm-hide         lg-hide">md</div>
+        <div class="xs-hide sm-hide md-hide        ">lg</div>
+
+        <div class="container mt4 clearfix">
+
+            <div class="col col-12 px3">
+                <h1 class="h0">matt<br class="xs-hide" /> brian&ccedil;on</h1>
+                <p class="h5">first (dot) last<br class="xs-hide" /> (at) gmail (dot) com</p>
+                <ul class="list-reset h3">
+                    <li class="inline-block">internet:</li>
+                    <li class="inline-block"><a href="https://github.com/mattbriancon">gh</a></li>
+                    <li class="inline-block"><a href="https://twitter.com/mattbriancon">t</a></li>
+                    <li class="inline-block"><a href="https://facebook.com/mattbriancon">f</a></li>
+                    <li class="inline-block"><a href="https://instagram.com/mattbriancon">i</a></li>
+                    <li class="inline-block"><a href="https://news.ycombinator.com/user?id=brimpa">hn</a></li>
+                    <li class="inline-block"><a href="https://www.linkedin.com/in/mattbriancon">li</a></li>
+                    <li class="inline-block"><a href="https://stackoverflow.com/users/305736/matt-briancon">so</a></li>
+                </ul>
             </div>
+
+            <div class="col col-12 px3">
+                <h1 class="xs-hide"><br /><br /></h1>
+                <ul class="h3 pl0 inside-list">
+                    <li class="my2 list-reset">cv:</li>
+                    <li class="my2"><a href="https://managedbyq.com/">q</a></li>
+                    <li class="my2"><a href="http://typecode.com/">type/code</a></li>
+                    <li class="my2"><a href="https://getbeautified.com/">beautified</a></li>
+                    <li class="my2"><a href="https://www.givlet.org">givlet</a></li>
+                    <li class="my2"><a href="http://curranhatleberg.com">curran hatleberg</a></li>
+                    <li class="my2"><a href="https://play.google.com/store/apps/details?id=com.brimpa.hypem">hype!</a></li>
+                    <li class="my2"><a href="https://bgov.com">bgov</a></li>
+                    <li class="my2">qubelab</li>
+                    <li class="my2"><a href="https://cwru.edu">cwru</a></li>
+                </ul>
+            </div>
+
         </div>
 
-        <div class="right">
-            <h1 class="name"><br /><br /></h1>
-            <ul>
-                <li><a href="http://managedbyq.com/">q</a></li>
-                <li><a href="http://typecode.com/">type/code</a></li>
-                <li><a href="http://getbeautified.com/">beautified</a></li>
-                <li><a href="https://www.givlet.org">givlet</a></li>
-                <li><a href="http://curranhatleberg.com">curran hatleberg</a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.brimpa.hypem">hype!</a></li>
-                <li><a href="http://bgov.com">bgov</a></li>
-                <li><a href="http://qubelab.org">qubelab</a></li>
-                <li><a href="http://cwru.edu">cwru</a></li>
-            </ul>
-        </div>
-
-        <script type="text/javascript">
+        <script>
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-574362-2']);
             _gaq.push(['_trackPageview']);
             (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = 'https://ssl.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
             })();
         </script>
     </body>
